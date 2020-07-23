@@ -1,6 +1,6 @@
 function countLetters(string){ 
     
-    let val = string.split('');
+    let val = string.split(' ').join("");
 
     let storage = [];
     
