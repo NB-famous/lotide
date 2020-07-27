@@ -1,11 +1,11 @@
-/* function tail (val1){
-    let result = val1[val1.length -1];
-    return result;
-} */
-
 
 const tail = function(val1) {
-  return val1.slice(-val1.length + 1);
+  return val1.slice(-val1.length + 1); // -val1.length = -4 -> equivalent to val1[0] -> adding a plus 1 will move it to val1[1] thus filtering it from there.
 };
 
-console.log(tail(["Hello", "Lighthouse", "Labs"]));
+module.exports = tail;
+
+
+//Test Code // 
+
+//console.log(tail(["Hello", "Lighthouse", "Labs", "Nick"]));
