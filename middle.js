@@ -1,32 +1,6 @@
-function eqArrays(val1, val2){
-    if(val1.length !== val2.length){
-        return false;
-    }
-    
-    for(let i = 0; i < val1.length; i++){
-        if(val1[i] !== val2[i]){
-            return false;
-        }    
-    }
-    return true;
-}
+const assertArraysEqual = require('./assertArraysEqual');
 
-
-function assertArraysEqual(arr1 , arr2){
-
-    if(eqArrays(arr1, arr2) === true){
-        return `Assertion Passed: 👍👍👍` ;
-    }
-    else{
-        return `Assertion Failed: 🚩🚩🚩` ;
-    }
-
-} 
-
-
-    
-
- function middle(target){
+const middle = (target) => {
 
     let arr = Math.floor(target.length / 2);
     let storage = [];
@@ -44,14 +18,19 @@ function assertArraysEqual(arr1 , arr2){
 
     return storage;
 }
+
+module.exports = middle;
+//module.exports = assertArraysEqual;
  
-        
-console.log(assertArraysEqual(middle([1]), [])); // => []
+      
+// Test Code for Middle Function //
+
+/* console.log(assertArraysEqual(middle([1]), [])); // => []
 console.log(middle([1, 2])); // => []
 console.log(middle([1, 2, 3])); // => [2]
 console.log(middle([1, 2, 3, 4, 5])); // => [3]
 console.log(middle([1, 2, 3, 4])); // => [2, 3]
-console.log(middle([1, 2, 3, 4, 5, 6])); // => [3, 4]
+console.log(middle([1, 2, 3, 4, 5, 6])); // => [3, 4] */
 
 
    
