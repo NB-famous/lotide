@@ -1,5 +1,4 @@
-////////////// Using this as References //////////// Can be deleted -> no longer needed due to chai
-
+////////////// Using this as References //////////// Can be deleted -> no longer
 /* const assertEqual = require('../assertEqual');
 const head = require('../head');
 
