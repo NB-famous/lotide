@@ -18,8 +18,6 @@ const bestTVShowsByGenre = {
 
 
 
-
-
   function findKeyByValue(catg, title){
 
     for(let key in catg){

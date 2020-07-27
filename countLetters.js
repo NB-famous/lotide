@@ -6,12 +6,14 @@ function countLetters(string){
     
     for(let i in val){
         if(val[i] !== ''){
-            storage.push(val[i]);  
+            storage.push(val[i]);
+            //console.log(storage);    
         }
     }
+    
 
     let answer = {};
-    //console.log(storage);
+    console.log(storage);
     for(let i of storage){
       if(answer[i]){
           answer[i]++;

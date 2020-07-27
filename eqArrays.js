@@ -15,7 +15,7 @@ const assertEqual = function(actual, expected) {
   console.log(assertEqual(1, 1)); 
  */
 
- function eqArrays(val1, val2){
+function eqArrays(val1, val2){
     if(val1.length !== val2.length){
         return false;
     }

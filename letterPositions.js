@@ -1,3 +1,14 @@
+const assertEqual = function(actual, expected) {
+
+    if (actual !== expected) {
+      return `Assertion Failed: 🚩🚩🚩${actual} !== ${expected} 🚩🚩🚩` ;
+    } else {
+      return `Assertion Passed: 👍👍👍${actual} === ${expected}👍👍👍`;
+    }
+  };
+
+
+
 const letterPositions = function(sentence) {
 
     let val = sentence.split(' ').join("");
